@@ -1,0 +1,101 @@
+<section>
+  <h3>Featured Posts</h3>
+
+  <div class="row">
+    <div class="col-2">
+      <div class="main-posts">
+        <div class="post-img"></div>
+        <div class="category">Science</div>
+        <h2>Essential Math for Data Science</h2>
+        <p>
+          Mathematics is the bedrock of any contemporary discipline of science.
+          Almost all the techniques of modern data science, including machine
+          learning, have a deep mathematical underpinning.
+        </p>
+        <div class="credits">
+          <span class="material-icons align-middle"> favorite_border </span> 123
+          <span class="author">By Melany Kuve</span>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post" *ngFor="let post of featuredPosts">
+          <div class="row">
+            <div class="col-2">
+              <div
+                class="post-img"
+                [ngStyle]="{
+                  'background-image': 'url(' + post.imagePath + ')'
+                }"
+              ></div>
+              <!-- <img src="../../../assets/images/historyPost.jpeg" alt="Post Image"> -->
+              <div class="post-info">
+                <div class="category">{{ post.category }}</div>
+                <h4>{{ post.title }}</h4>
+                <div class="credits">
+                  <span class="material-icons align-middle">
+                    favorite_border
+                  </span>
+                  {{ post.rating }}
+                  <span class="author">By {{ post.author }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>New Blog Posts </h3>
+
+  <div class="new-posts">
+    <div class="row">
+      <div class="col-3">
+        <div class="post" *ngFor="let post of newPosts">
+          <div
+            class="post-img"
+            [ngStyle]="{ 'background-image': 'url(' + post.imagePath + ')' }"
+          ></div>
+          <div class="category">{{ post.category }}</div>
+          <h4>{{ post.title }}</h4>
+          <div class="credits">
+            <span class="material-icons align-middle"> favorite_border </span>
+            {{ post.rating }}
+            <span class="author">By {{ post.author }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Popular Blog Posts</h3>
+
+  <div class="row popular-posts">
+    <div class="col-2 bottom">
+      <div class="mr">
+        <div class="post col-2" *ngFor="let post of popularPosts">
+          <div
+            class="post-img"
+            [ngStyle]="{ 'background-image': 'url(' + post.imagePath + ')' }"
+          ></div>
+          <div class="post-info">
+            <div class="category">{{ post.category }}</div>
+            <h4>{{ post.title }}</h4>
+            <div class="credits">
+              <span class="material-icons align-middle"> favorite_border </span>
+              {{ post.rating }}
+              <span class="author">By {{ post.author }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popular-post-img">
+        <h2>History tells us what may happen next with Brexit & Trump</h2>
+      </div>
+    </div>
+  </div>
+</section>

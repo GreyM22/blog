@@ -1,0 +1,232 @@
+*
+  font-size: 16px
+  line-height: 22px
+  color: #4B4E5B
+
+h1
+  font-size: 36px
+  line-height: 49px
+  margin-top: 8px
+  margin-bottom: 14px
+  color: white
+
+.mat-menu-content
+  background: #30323D!important
+
+.mat-toolbar
+  background: #4B4E5B!important
+  color: white
+  .toolbar-content
+    width: 80%
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    align-items: center
+    .item-ml
+      margin-left: 100px
+    .item
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: 600
+      color: white
+
+.inline-icon
+  vertical-align: bottom
+  font-size: 16px !important
+
+.avatar
+  .photo-profile
+    background: #C4C4C4 url("../../../assets/images/photo-profile.jpeg") no-repeat center center
+    background-size: auto 100%
+    border-radius: 50%
+    display: inline-block
+  .author
+    display: inline-block
+    vertical-align: top
+
+section.top
+  width: 80%
+  margin: 61px auto 0 auto
+  padding: 0 16px
+  .bg-img
+    position: relative
+    background: #C4C4C4 url("../../../assets/images/mathbord.jpeg") no-repeat center center
+    width: 58%
+    height: 460px
+    border-radius: 4px
+  .title
+    box-sizing: border-box
+    padding: 56px 18px
+    border-radius: 4px
+    background: #30323D
+    position: absolute
+    width: 80%
+    height: 413px
+    left: 100%
+    top: 23px
+    color: white
+    .category
+      color: #A03DDC
+    .time
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      opacity: 0.2
+      p
+        color: white
+        span
+          color: white
+    .avatar
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      margin-top: 82px
+      color: #FFFFFF
+      .photo-profile
+        width: 80px
+        height: 80px
+      .author
+        margin-left: 21px
+        margin-top: 20px
+        p
+          margin: 0 0 2px 0
+        .name
+          opacity: 0.7
+          color: white
+        .date
+          opacity: 0.2
+          color: white
+
+article
+  width: 54%
+  margin: 74px auto 34px auto
+  text-align: justify
+  img
+    width: 100%
+    margin: 20px 0
+  .quote
+    font-style: italic
+    position: relative
+  .quote::before
+    content: ""
+    width: 2px
+    height: 100%
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    background: black
+    margin-left: -23px
+
+.linkedin::after
+  content: url(../../../assets/svg/LNIcon.svg)
+.facebook::after
+  content: url(../../../assets/svg/FacebookIcon.svg)
+.instagram::after
+  content: url(../../../assets/svg/InstaIcon.svg)
+
+section.bottom
+  width: 54%
+  margin: 0 auto
+  .col-2
+    display: grid
+    grid-template-columns: 1fr 1fr
+  .social-icons
+    text-align: right
+    span::after
+      height: 18px
+      vertical-align: middle
+    a
+      color: #4B4E5B
+      text-decoration: none
+      font-weight: 600
+      margin-right: 10px
+    .linkedin::after
+      margin: 0 10px
+    .facebook::after
+      margin: 0 10px
+    .instagram::after
+      margin: 0 10px
+  .user
+    padding-top: 54px
+    margin-bottom: 51px
+    display: inline-flex
+    margin-top: 46px
+    border-top: 1px solid #F3F3F4
+
+    .social-icons
+      display: inline-flex
+      flex-direction: column
+      justify-content: center
+      width: 18px
+      margin-left: -42px
+      height: 100%
+      .linkedin::after
+        content: url(../../../assets/svg/LNBlackIcon.svg)
+      .facebook::after
+        content: url(../../../assets/svg/FacebookBlackIcon.svg)
+      .instagram::after
+        content: url(../../../assets/svg/InstaBlackIcon.svg)
+      .inline-icon
+        display: flex
+        justify-content: center
+        margin: 8px 0
+    .avatar
+      width: auto
+      display: inline-flex
+      margin-left: 42px
+      vertical-align: top
+      .photo-profile
+        min-width: 137px
+        height: 137px
+      .author
+        margin-left: 30px
+        display: inline-block
+        vertical-align: top
+        .name
+          color: #4B4E5B
+          font-weight: 600
+        .country
+          color: #6C6CEE
+        p
+          margin: 0 0 10px 0
+
+@media screen and (min-width: 1961px)
+  section.top
+    .bg-img
+      background-size: cover
+
+@media screen and (max-width: 909px)
+  section.top
+    .title
+      left: 59%
+      width: 116%
+
+@media screen and (max-width: 765px)
+  article
+    width: 74%
+  section.bottom
+    width: 74%
+
+@media screen and (max-width: 627px)
+  section.top
+    .bg-img
+      background: none
+      width: 100%
+      .title
+        width: 100%
+        left: 0
+
+@media screen and (max-width: 428px)
+  section.bottom
+    .user
+      .avatar
+        display: block
+        margin-left: 0
+        .photo-profile
+          display: block
+          width: 137px
+          margin: 0 auto
+        .author
+          display: block
+          margin: 27px 0 0 0
